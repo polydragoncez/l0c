@@ -16,4 +16,4 @@ jobs:
           webhook-uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}
           custom-facts: |
             - name: checkBot
-              value: \@${{ secrets.BOT_NAME }} 
+              value: ${{ secrets.BOT_NAME }} 
