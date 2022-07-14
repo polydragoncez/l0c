@@ -15,5 +15,5 @@ jobs:
           github-token: ${{ github.token }}
           webhook-uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}
           custom-facts: |
-            - name: Custom Fact Name 1
-              value: Custom Fact Value 1
+            - name: checkBot
+              value: ${{ secrets.Bot_Name }}
