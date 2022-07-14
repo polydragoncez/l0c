@@ -16,7 +16,7 @@ jobs:
           webhook-uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}
       - uses: fjogeleit/http-request-action@v1
         with:
-          url: ${{ AZURE_FUNCION_TRIGGER }}
+          url: ${{ secrets.AZURE_FUNCION_TRIGGER }}
           method: 'POST'
           customHeaders: '{"Content-Type": "application/json"}'
           data: '{"commit": ${{ github.GITHUB_SHA }}, "keytest": "valuetest"}'
