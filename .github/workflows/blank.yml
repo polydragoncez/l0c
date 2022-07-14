@@ -18,7 +18,7 @@ jobs:
       - uses: aliencube/microsoft-teams-actions@v0.8.0
         with:
           webhook_uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}
-          summary: "summary"
-          text: ${{ secrets.BOT_NAME }} 
+          summary: ${{ secrets.BOT_NAME }}
+          text: "${{ secrets.BOT_NAME }}"
 
 
