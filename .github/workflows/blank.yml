@@ -14,6 +14,9 @@ jobs:
         with:
           github-token: ${{ github.token }}
           webhook-uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}
+          custom-facts: |
+            - name: checkBot
+              value: "<at>${{ secrets.BOT_NAME }}</at>"
       
       - uses: aliencube/microsoft-teams-actions@v0.8.0
         with:
