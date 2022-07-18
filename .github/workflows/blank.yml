@@ -18,5 +18,6 @@ jobs:
         with:
           url: "${{ secrets.AZURE_FUNCION_TRIGGER }}&commit=${{ github.sha }}"
           method: 'GET' 
+          timeout: 1800000
 
 
